@@ -1,0 +1,90 @@
+main{
+    padding-top: 7%;
+}
+.section{
+    width: 100%;
+    /* text-align: center; */
+    justify-content: space-around;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 20px;
+    
+}
+section h4{
+    /* font-size: 25px; */
+    font-size: clamp(1rem, 3vw, 3rem);
+
+}
+.search-label input{
+    width: 420px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px ;
+}
+.repost-to-the-site{
+    text-decoration: none;
+    font-size: clamp(1rem, 3vw, 3rem);
+    color: white;
+}
+.repost-to-the-site{
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+    gap:10px
+}
+.repost-to-the-site1{
+    color: orange;
+    font-size: 20px;
+}    
+.images-block{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px 300px;
+    grid-template-rows: 350px;
+    gap: 10px;
+    margin-left: 30px;
+}
+.image{
+    width: 300px;
+    height: 350px;
+    padding: 10px;
+    border: 1px solid gray;
+}
+.image:hover{
+    border-radius: 30px;
+    background-color: wheat;
+    flex-grow:1;
+    scale: .8;
+    transition: all .8s ease-in-out;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.card-container{
+    padding: 16px;
+}
+.card-container h3{
+    font-size: 20px;
+    margin: 10px;
+}
+.card-container p{
+    font-size: 20px;
+}
+.card{
+    width: 325px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0,2);
+    padding: 15px;
+}
+.card img{
+    width: 80%;
+    height: 80%;
+}

@@ -1,0 +1,194 @@
+*{
+    box-sizing: border-box;
+}
+main{
+    padding-top: 7%;
+}
+.section{
+    width: 100%;
+    /* text-align: center; */
+    justify-content: space-around;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 20px;
+
+}
+section h4{
+    font-size: clamp(1rem, 4vw, 3rem);
+
+}
+.search-label input{
+    width: 420px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px ;
+}
+.repost-to-the-site{
+    text-decoration: none;
+    font-size: clamp(1rem, 4vw, 3rem);
+    color: white;
+}
+.repost-to-the-site{
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+    gap:10px
+}
+.repost-to-the-site1{
+    color: orange;
+    font-size: 20px;
+}    
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    
+}
+.card-container{
+    padding: 16px;
+}
+.card-container h3{
+    font-size: 30px;
+    margin: 10px;
+}
+.card-container p{
+    font-size: 20px;
+
+}
+
+.card{
+    width: 325px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0,2);
+    margin: 20px;
+}
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.footer{
+    background-color: gray;
+    padding-bottom: 150px;
+}
+@media screen and (width > 1024px) {
+    .grid-area{
+        grid-area: 1 / 1 / span 2 / span 2;
+        width: 500px;
+        height: 620px;
+    }
+}
+
+
+/* Модальное окно */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    z-index: 1; /* Сверху */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Полупрозрачный фон */
+}
+
+/* Контейнер модального окна */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+}
+
+/* Кнопка закрытия модального окна */
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Стили для формы */
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: rgb(187, 121, 0);
+}
+
+.newBook{
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: orange;
+    color: white;
+    width: 150px ;
+    height:30px ;
+    margin-left: 690px;
+}
+
+/* Стили для модального окна */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
